@@ -1,50 +1,18 @@
-# gatsby-starter-typescript-plus
+# easy-display-website
 
-> A starter kit for TypeScript-based Gatsby projects with sensible defaults.
 
-This is a starter kit for [Gatsby.js](https://www.gatsbyjs.org/) websites written in TypeScript. It includes the bare essentials for you to get started (styling, Markdown parsing, minimal toolset).
+> this is a source code repo of: [easy-display-website](http://www.easy-display.info)
 
-## Features
+this is a source code repo of the easy-display-website
 
-- TypeScript
-- TSLint (with custom TSLint rules)
-- Markdown rendering with Remark
-- Basic component structure
-- Styling with [emotion](https://emotion.sh/)
+### Technologies used in building the site
 
-## Geting started
+- Gatsby 2
+- NodeJS
+- typescript
+- StyledComponents
 
-Install this starter (assuming you have `gatsby-cli` installed) by running the following command:
+### Credits
 
-```bash
-gatsby new project-name https://github.com/resir014/gatsby-starter-typescript-plus
-```
-
-## Developing
-
-A nodejs >= 6.0.0 setup with [yarn](https://yarnpkg.com/) is recommended.
-
-```bash
-# install dependencies
-yarn
-
-# ...or, for npm
-npm install
-
-# serve with hot reload at localhost:8000
-npm start
-
-# build for production
-npm run build
-
-# build for production and push to gh-pages branch
-npm run deploy
-```
-
-## Credits
-
-Built with [Gatsby](https://www.gatsbyjs.org/) - the blazing-fast static site generator for [React](https://facebook.github.io/react/).
-
-## Deploy
-
-[![Deploy to Netlify](https://www.netlify.com/img/deploy/button.svg)](https://app.netlify.com/start/deploy?repository=https://github.com/resir014/gatsby-starter-typescript-plus)
+- Built with [Gatsby](https://www.gatsbyjs.org/)
+- Template: [Gatsby Starter Template](https://www.gatsbyjs.org/starters/gatsby-starter)
