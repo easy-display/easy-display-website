@@ -22,11 +22,6 @@ const Logo = styled.img`
   margin-left: -100px;
 `;
 
-const FeaturesWhiteContainer = styled.div`
-  background-color: ${colors.white};
-`;
-
-
 const FeaturesContainer = styled.div`
   width: 100%;
   height: 100%;
@@ -144,7 +139,7 @@ const IndexPage: React.SFC<IndexPageProps> = () => (
               <WhiteParagraph>Get An Easy Secondary Support Display Without Husstle</WhiteParagraph>
             </CenteredContainer>
           </VioletContainer>
-          <FeaturesWhiteContainer>
+          <WhiteContainer>
             <Logo src={withPrefix('/images/icon.svg')} />
             <FeaturesContainer>
               <Feature>
@@ -172,7 +167,7 @@ const IndexPage: React.SFC<IndexPageProps> = () => (
                 Android client coming soon...
               </Feature>
             </FeaturesContainer>
-          </FeaturesWhiteContainer>
+          </WhiteContainer>
           <HorizontalContainer>
             <DownloadLink href={props.site.siteMetadata.itunesLink}>
               <AppStoreImage src={withPrefix('/images/Download_on_the_App_Store_Badge.svg')} />

@@ -1,4 +1,4 @@
-import styled from "styled-components";
+import styled from 'react-emotion';
 import { colors } from "../styles/variables";
 
 const DownloadLink = styled.a`

@@ -2,7 +2,7 @@ import Page from "../components/Page";
 import Container from "../components/Container";
 
 import * as React from "react";
-import styled from "styled-components";
+import styled from 'react-emotion';
 import { colors } from "../styles/variables";
 
 const PrivacyPolicyContainer = styled(Container)`

@@ -4,7 +4,7 @@ import Page from '../components/Page';
 import Container from '../components/Container';
 import DownloadLink from '../components/DownloadLink';
 import WhiteContainer from '../components/WhiteContainer';
-import styled from 'styled-components';
+import styled from 'react-emotion';
 import IndexLayout from '../layouts';
 
 const HorizontallyCentered = styled.div`

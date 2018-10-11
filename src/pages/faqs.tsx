@@ -2,7 +2,7 @@ import * as React from 'react';
 
 import Page from '../components/Page';
 import Container from '../components/Container';
-import styled from 'styled-components';
+import styled from 'react-emotion';
 import { getEmSize } from '../styles/mixins';
 import { colors, widths } from '../styles/variables';
 import GrayContainer from '../components/GrayContainer';

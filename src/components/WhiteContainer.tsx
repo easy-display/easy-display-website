@@ -1,10 +1,11 @@
-import styled from 'styled-components';
-import Container from './Container';
+import styled from 'react-emotion';
+
+import Container from "./Container";
+import { colors } from "../styles/variables";
 
 const WhiteContainer = styled(Container)`
-  background-color: red;
-  display: none;
-  text-align: center;
+  background-color: ${colors.white};
+  height: 300px;
 `;
 
 export default WhiteContainer;

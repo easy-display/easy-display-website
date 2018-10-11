@@ -2,7 +2,7 @@ import * as React from "react";
 
 import Page from "../components/Page";
 import WhiteContainer from "../components/WhiteContainer";
-import styled from "styled-components";
+import styled from 'react-emotion';
 import { colors } from "../styles/variables";
 import { withPrefix } from "gatsby-link";
 import CenteredImage from "../components/CenteredImage";
