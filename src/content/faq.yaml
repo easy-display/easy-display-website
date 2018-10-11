@@ -1,0 +1,24 @@
+---
+- question: What is EasyDisplay?
+  answer: EasyDisplay is a web-browser controlled from desktop.
+- question: How would EasyDisplay help me?
+  answer: if you need have an iPad and you want to use as a browser without touching it.
+- question: Why won't I use something like DuetDisplay?
+  answer: DuetDisplay is awesome, but it is a bit heavy on old iPads.
+- question: Give me a sample usage for EasyDisplay
+  answer: as a display board for your favourite web-app or news site or a panel for your servers list/statuses
+- question: How does the Mac App talk to the iOS client?
+  answer: Through a server.
+- question: Why does't the Mac App talk directly to the iOS client?
+  answer: we are planning to make another iOS device or web-application remote control one or more browser-apps
+- question: Does EasyDisplay respect my privacy?
+  answer: Yes.
+- question: How does EasyDisplay respect my privacy?
+  answer: All users on EasyDisplay are anonymous users. EasyDisplay has no users management of any kind.
+- question: Does EasyDisplay collect any information about my browsing patterns?
+  answer: No.
+- question: How do I make sure that EasyDisplay is not collecting any information about my browsing patterns?
+  answer: you can check the source-code of the server:<a href='https://github.com/tillawy/'>https://github.com/tillawy/</a>
+- question: How come EasyDisplay is open-source and you charge for it?
+  answer: We charge to support the servers hosting.
+

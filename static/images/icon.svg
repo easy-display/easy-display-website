@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="500px" height="500px" viewBox="0 0 500 500" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 47.1 (45422) - http://www.bohemiancoding.com/sketch -->
+    <title>icon</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="icons" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Desktop" transform="translate(-241.000000, -229.000000)">
+            <g id="icon" transform="translate(241.000000, 229.000000)">
+                <g>
+                    <path d="M249.996,0 C111.93,0 0,111.93 0,249.996 C0,388.067 111.93,499.997 249.996,499.997 C388.067,499.997 499.997,388.067 499.997,249.996 C499.997,111.93 388.067,0 249.996,0 Z" id="Shape" fill="#656D78" fill-rule="nonzero"></path>
+                    <g id="_x31_" transform="translate(114.000000, 138.000000)" fill-rule="nonzero">
+                        <g id="Group" transform="translate(91.000000, 183.000000)">
+                            <rect id="Rectangle-path" fill="#FFFFFF" x="3.606" y="4.639" width="82.785" height="26.148"></rect>
+                            <polygon id="Shape" fill="#DFE0E1" points="86.391 19.301 3.606 14.784 3.606 0.123 86.391 0.123"></polygon>
+                            <polygon id="Shape" fill="#EDEDEE" points="90.155 38.513 0.215 38.513 3.814 30.788 86.556 30.788"></polygon>
+                            <path d="M88.649,40.761 C87.145,40.761 3.605,40.761 2.099,40.761 C0.59,40.761 0.214,38.513 0.214,38.513 L90.154,38.513 C90.155,38.513 90.155,40.761 88.649,40.761 Z" id="Shape" fill="#FFFFFF"></path>
+                        </g>
+                        <path d="M263.948,0.231 L8.051,0.231 C3.913,0.231 0.527,3.622 0.527,7.757 L0.527,162.05 L0.527,180.869 C0.527,185.002 3.913,188.387 8.051,188.387 L263.948,188.387 C268.086,188.387 271.474,185.001 271.474,180.869 L271.474,162.05 L271.474,7.758 C271.475,3.622 268.086,0.231 263.948,0.231 Z" id="Shape" fill="#FFFFFF"></path>
+                        <rect id="Rectangle-path" fill="#9D7CBF" x="17.084" y="16.787" width="237.83" height="151.824"></rect>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>
