@@ -6,12 +6,12 @@ import Container from '../components/Container';
 import IndexLayout from '../layouts';
 
 import VioletContainer from '../components/VioletContainer';
-import WhiteContainer from '../components/WhiteContainer';
 import DownloadLink from '../components/DownloadLink';
 import { withPrefix } from 'gatsby-link';
 
 import styled from 'react-emotion';
 import { colors } from '../styles/variables';
+import WhiteContainer from '../components/WhiteContainer';
 
 const Logo = styled.img`
   height: 200px;
@@ -21,6 +21,11 @@ const Logo = styled.img`
   left: 50%;
   margin-left: -100px;
 `;
+
+const FeaturesWhiteContainer = styled.div`
+  background-color: ${colors.white};
+`;
+
 
 const FeaturesContainer = styled.div`
   width: 100%;
@@ -36,6 +41,7 @@ const Feature = styled.div`
   height: 150px;
   margin-top: 20px;
   margin-bottom: 20px;
+  text-align: center;
   color: ${colors.gray.calm};
   > h5 {
     color: ${colors.gray.calm};
@@ -84,18 +90,19 @@ const CenteredContainer = styled.div`
   flex-direction: column;
   height: 100%;
 `;
-/*
+
 const WhiteHeader = styled.p`
   color: ${colors.white};
   text-align: center;
   font-size: 5rem !important;
-`;*/
+`;
 
+/*
 const NavyHeader = styled.p`
   color: ${colors.brand};
   text-align: center;
   font-size: 5rem !important;
-`;
+`;*/
 
 const WhiteParagraph = styled.p`
   color: ${colors.white};
@@ -133,11 +140,11 @@ const IndexPage: React.SFC<IndexPageProps> = () => (
         <Page>
           <VioletContainer>
             <CenteredContainer>
-              <NavyHeader>EasyDisplay</NavyHeader>
+              <WhiteHeader>EasyDisplay</WhiteHeader>
               <WhiteParagraph>Get An Easy Secondary Support Display Without Husstle</WhiteParagraph>
             </CenteredContainer>
           </VioletContainer>
-          <WhiteContainer>
+          <FeaturesWhiteContainer>
             <Logo src={withPrefix('/images/icon.svg')} />
             <FeaturesContainer>
               <Feature>
@@ -162,10 +169,10 @@ const IndexPage: React.SFC<IndexPageProps> = () => (
               </Feature>
               <Feature>
                 <h5>Android</h5>
-                Android client coming soon.
+                Android client coming soon...
               </Feature>
             </FeaturesContainer>
-          </WhiteContainer>
+          </FeaturesWhiteContainer>
           <HorizontalContainer>
             <DownloadLink href={props.site.siteMetadata.itunesLink}>
               <AppStoreImage src={withPrefix('/images/Download_on_the_App_Store_Badge.svg')} />

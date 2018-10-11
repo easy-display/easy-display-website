@@ -1,7 +1,7 @@
 import * as React from 'react';
 import styled from 'react-emotion';
 
-import { dimensions } from '../styles/variables';
+import { colors, dimensions } from '../styles/variables';
 
 const StyledPage = styled.div`
   display: block;
@@ -9,6 +9,7 @@ const StyledPage = styled.div`
   position: relative;
   padding: ${dimensions.containerPadding}rem;
   margin-bottom: 3rem;
+  background-color: ${colors.brand};
 `;
 
 interface PageProps {
