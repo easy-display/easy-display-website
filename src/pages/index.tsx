@@ -27,6 +27,7 @@ const FeaturesContainer = styled.div`
   height: 100%;
   display: flex;
   flex-wrap: wrap;
+  height: 600px;
 `;
 
 const Feature = styled.div`
@@ -49,6 +50,7 @@ const HorizontalContainer = styled(WhiteContainer)`
   flex-direction: row;
   justify-content: center;
   min-height: 0;
+  height: 100px;
   > a {
     margin: 10px;
   }
@@ -92,6 +94,10 @@ const WhiteHeader = styled.p`
   font-size: 5rem !important;
 `;
 
+const TopVioletContainer = styled(VioletContainer)`
+  height: 300px;
+`;
+
 /*
 const NavyHeader = styled.p`
   color: ${colors.brand};
@@ -133,12 +139,12 @@ const IndexPage: React.SFC<IndexPageProps> = () => (
     render={(props: IndexPageProps) => (
       <IndexLayout>
         <Page>
-          <VioletContainer>
+          <TopVioletContainer>
             <CenteredContainer>
               <WhiteHeader>EasyDisplay</WhiteHeader>
               <WhiteParagraph>Get An Easy Secondary Support Display Without Husstle</WhiteParagraph>
             </CenteredContainer>
-          </VioletContainer>
+          </TopVioletContainer>
           <WhiteContainer>
             <Logo src={withPrefix('/images/icon.svg')} />
             <FeaturesContainer>

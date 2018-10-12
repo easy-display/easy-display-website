@@ -1,11 +1,13 @@
 import * as React from 'react'
 import styled from 'react-emotion'
+import { colors } from '../styles/variables';
 
 const StyledLayoutMain = styled.main`
   display: flex;
   flex-direction: column;
   flex: 1;
-`
+  background-color: ${colors.brand};
+`;
 
 interface LayoutMainProps {
   className?: string

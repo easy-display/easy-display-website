@@ -1,7 +1,7 @@
-import * as React from 'react';
-import styled from 'react-emotion';
+import * as React from 'react'
+import styled from 'react-emotion'
 
-import { colors, dimensions } from '../styles/variables';
+import { colors, dimensions } from '../styles/variables'
 
 const StyledPage = styled.div`
   display: block;
@@ -10,12 +10,12 @@ const StyledPage = styled.div`
   padding: ${dimensions.containerPadding}rem;
   margin-bottom: 3rem;
   background-color: ${colors.brand};
-`;
+`
 
 interface PageProps {
-  className?: string;
+  className?: string
 }
 
-const Page: React.SFC<PageProps> = ({ children, className }) => <StyledPage className={className}>{children}</StyledPage>;
+const Page: React.SFC<PageProps> = ({ children, className }) => <StyledPage className={className}>{children}</StyledPage>
 
-export default Page;
+export default Page
