@@ -1,9 +1,9 @@
 ---
-slug: "setup-sensu-1.5"
+slug: "setup-sensu-and-easy-display"
 date: "2018-10-06T06:15:59.165Z"
-title: "Sensu 1.5 Setup"
-excerpt: "Learn to deploy Sensu"
-tags: [ "sensu" , "docker" ]
+title: "Sensu And EasyDisplay"
+excerpt: "Learn to open Sensu, authentication sensu with EasyDisplay and check your servers status"
+tags: [ "easy-display" , "sensu" ]
 layout: blog
 author: "Mohammed O. Tillawy"
 author_image: "https://secure.gravatar.com/avatar/f70cf5d832c72d8f308471ae656b57dc"

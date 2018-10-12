@@ -98,6 +98,8 @@ const createBlogPostsPages = async ({ graphql, actions }) => {
               title
               excerpt
               tags
+              author
+              author_image
             }
           }
         }
@@ -121,7 +123,7 @@ const createBlogPostsPages = async ({ graphql, actions }) => {
     console.log(node.id);
     const slug = node.frontmatter.slug;
 
-    console.log(`slug: ${slug}, blogPostTemplate: ${blogPostTemplate}`);
+    // console.log(`slug: ${slug}, blogPostTemplate: ${blogPostTemplate}`);
 
     createPage({
       path: slug,

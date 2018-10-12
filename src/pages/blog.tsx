@@ -25,6 +25,36 @@ const BlogPost = styled(WhiteContainer)`
   box-shadow: 5px 5px 5px 0px #ccc;
 `
 
+const Author = styled.p`
+  color: ${colors.gray.calm};
+  > em {
+    color: ${colors.brand};
+  }
+  padding-bottom: 5px;
+  display: inline;
+`
+
+const Tags = styled.ul`
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+`
+const Tag = styled.li`
+  display: inline-block;
+  padding-right: 10px;
+  font-weight: bold;
+  font-style: oblique;
+`
+
+const Img = styled.img`
+  margin-top; 10px;
+  height: 25px;
+  width: 25px;
+  top: 5px;
+  border-radius: 25px;
+  margin-right: 5px;
+`
+
 interface BlogProps {
   data: {
     allMarkdownRemark: {
@@ -38,6 +68,8 @@ interface BlogProps {
               slug: string
               tags: [string]
               excerpt: string
+              author: string
+              author_image: string
             }
           }
         }
@@ -60,17 +92,20 @@ const BlogPostsPage: React.SFC<BlogProps> = ({ data }) => {
                 <h2>
                   <Link to={frontmatter.slug}>{frontmatter.title}</Link>
                 </h2>
-                <p>{frontmatter.date}</p>
                 <p>{frontmatter.excerpt}</p>
-                <ul>
+                <Img src={frontmatter.author_image} />
+                <Author>
+                  Written by <em>{frontmatter.author}</em> on {frontmatter.date}
+                </Author>
+                <Tags>
                   {post.frontmatter.tags.map(tag => {
                     return (
-                      <li key={tag}>
+                      <Tag key={tag}>
                         <Link to={`/tags/${tag}`}>{tag}</Link>
-                      </li>
+                      </Tag>
                     )
                   })}
-                </ul>
+                </Tags>
               </BlogPost>
             )
           })}
@@ -93,6 +128,8 @@ export const query = graphql`
             slug
             tags
             excerpt
+            author
+            author_image
           }
         }
       }

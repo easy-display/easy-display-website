@@ -1,7 +1,7 @@
 import * as React from 'react'
 import { graphql } from 'gatsby'
 
-import LayoutPage from '../components/LayoutPage.tsx'
+import LayoutPage from '../components/LayoutPage'
 import Container from '../components/Container'
 import IndexLayout from '../layouts'
 

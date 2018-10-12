@@ -21,6 +21,8 @@ interface BlogTemplateProps {
         date: Date
         tags: ['string']
         excerpt: ['string']
+        author: string
+        author_image: string
       }
     }
   }
@@ -59,6 +61,8 @@ export const query = graphql`
         date(formatString: "MMMM, DD, YYYY")
         tags
         excerpt
+        author
+        author_image
       }
     }
   }
