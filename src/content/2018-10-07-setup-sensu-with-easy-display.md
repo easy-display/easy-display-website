@@ -1,6 +1,6 @@
 ---
 slug: "setup-sensu-and-easy-display"
-date: "2018-10-06T06:15:59.165Z"
+date: "2018-10-07T06:15:59.165Z"
 title: "Sensu And EasyDisplay"
 excerpt: "Learn to open Sensu, authentication sensu with EasyDisplay and check your servers status"
 tags: [ "easy-display" , "sensu" ]

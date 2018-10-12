@@ -117,7 +117,7 @@ const BlogPostsPage: React.SFC<BlogProps> = ({ data }) => {
 
 export const query = graphql`
   query IndexPath {
-    allMarkdownRemark(filter: { frontmatter: { layout: { eq: "blog" } } }) {
+    allMarkdownRemark(sort: { order: DESC, fields: [frontmatter___date] }, filter: { frontmatter: { layout: { eq: "blog" } } }) {
       totalCount
       edges {
         node {
