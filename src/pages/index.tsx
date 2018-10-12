@@ -1,17 +1,17 @@
-import * as React from 'react';
-import { graphql, StaticQuery } from 'gatsby';
+import * as React from 'react'
+import { graphql, StaticQuery } from 'gatsby'
 
-import LayoutPage from '../components/LayoutPage.tsx';
-import Container from '../components/Container';
-import IndexLayout from '../layouts';
+import Container from '../components/Container'
+import IndexLayout from '../layouts'
 
-import VioletContainer from '../components/VioletContainer';
-import DownloadLink from '../components/DownloadLink';
-import { withPrefix } from 'gatsby-link';
+import VioletContainer from '../components/VioletContainer'
+import DownloadLink from '../components/DownloadLink'
+import { withPrefix } from 'gatsby-link'
 
-import styled from 'react-emotion';
-import { colors } from '../styles/variables';
-import WhiteContainer from '../components/WhiteContainer';
+import styled from 'react-emotion'
+import { colors } from '../styles/variables'
+import WhiteContainer from '../components/WhiteContainer'
+import LayoutPage from '../components/LayoutPage'
 
 const Logo = styled.img`
   height: 200px;
@@ -20,7 +20,7 @@ const Logo = styled.img`
   position: absolute;
   left: 50%;
   margin-left: -100px;
-`;
+`
 
 const FeaturesContainer = styled.div`
   width: 100%;
@@ -28,7 +28,7 @@ const FeaturesContainer = styled.div`
   display: flex;
   flex-wrap: wrap;
   height: 600px;
-`;
+`
 
 const Feature = styled.div`
   margin-left: 10%;
@@ -42,7 +42,7 @@ const Feature = styled.div`
   > h5 {
     color: ${colors.gray.calm};
   }
-`;
+`
 
 const HorizontalContainer = styled(WhiteContainer)`
   text-align: left;
@@ -54,7 +54,7 @@ const HorizontalContainer = styled(WhiteContainer)`
   > a {
     margin: 10px;
   }
-`;
+`
 
 const BottomContainer = styled(Container)`
   text-align: center;
@@ -64,21 +64,21 @@ const BottomContainer = styled(Container)`
   > a {
     color: ${colors.white};
   }
-`;
+`
 
 const GithubImage = styled.img`
   width: 50px;
-`;
+`
 
 const AppStoreImage = styled.img`
   width: 150px;
-`;
+`
 
 const Right = styled.div`
   float: right;
   font-size: 10px;
   color: ${colors.white};
-`;
+`
 
 const CenteredContainer = styled.div`
   display: flex;
@@ -86,17 +86,17 @@ const CenteredContainer = styled.div`
   justify-content: top;
   flex-direction: column;
   height: 100%;
-`;
+`
 
 const WhiteHeader = styled.p`
   color: ${colors.white};
   text-align: center;
   font-size: 5rem !important;
-`;
+`
 
 const TopVioletContainer = styled(VioletContainer)`
   height: 300px;
-`;
+`
 
 /*
 const NavyHeader = styled.p`
@@ -108,18 +108,18 @@ const NavyHeader = styled.p`
 const WhiteParagraph = styled.p`
   color: ${colors.white};
   text-align: center;
-`;
+`
 
 interface IndexPageProps {
-  children: () => any;
+  children: () => any
   site: {
     siteMetadata: {
-      downloadLink: string;
-      itunesLink: string;
-      twitter: string;
-      github: string;
-    };
-  };
+      downloadLink: string
+      itunesLink: string
+      twitter: string
+      github: string
+    }
+  }
 }
 
 const IndexPage: React.SFC<IndexPageProps> = () => (
@@ -191,6 +191,6 @@ const IndexPage: React.SFC<IndexPageProps> = () => (
       </IndexLayout>
     )}
   />
-);
+)
 
-export default IndexPage;
+export default IndexPage

@@ -2,15 +2,27 @@ import * as React from 'react'
 
 import styled from 'react-emotion'
 import Container from '../components/Container'
-import { colors } from '../styles/variables'
+import { colors, widths } from '../styles/variables'
 
 import { graphql, Link } from 'gatsby'
-import LayoutPage from '../components/LayoutPage.tsx'
 import IndexLayout from '../layouts'
+import LayoutBlog from '../components/LayoutBlog'
+import WhiteContainer from '../components/WhiteContainer'
+import { getEmSize } from '../styles/mixins'
 
 const BlogPostsContainer = styled(Container)`
+  max-width: ${getEmSize(widths.md)}em;
+  position: relative;
+  margin-left: auto;
+  margin-right: auto;
+`
+
+const BlogPost = styled(WhiteContainer)`
   background-color: ${colors.white};
-  width: 100%;
+  height: 300px;
+  margin: 20px;
+  padding: 20px;
+  box-shadow: 5px 5px 5px 0px #ccc;
 `
 
 interface BlogProps {
@@ -34,18 +46,20 @@ interface BlogProps {
   }
 }
 
-const BlogPage: React.SFC<BlogProps> = ({ data }) => {
+const BlogPostsPage: React.SFC<BlogProps> = ({ data }) => {
   const { edges: posts } = data.allMarkdownRemark
   console.log(posts)
   return (
     <IndexLayout>
-      <LayoutPage>
+      <LayoutBlog>
         <BlogPostsContainer>
           {posts.map(({ node: post }) => {
             const { frontmatter } = post
             return (
-              <h2 key={post.id}>
-                <Link to={frontmatter.slug}>{frontmatter.title}</Link>
+              <BlogPost key={post.id}>
+                <h2>
+                  <Link to={frontmatter.slug}>{frontmatter.title}</Link>
+                </h2>
                 <p>{frontmatter.date}</p>
                 <p>{frontmatter.excerpt}</p>
                 <ul>
@@ -57,11 +71,11 @@ const BlogPage: React.SFC<BlogProps> = ({ data }) => {
                     )
                   })}
                 </ul>
-              </h2>
+              </BlogPost>
             )
           })}
         </BlogPostsContainer>
-      </LayoutPage>
+      </LayoutBlog>
     </IndexLayout>
   )
 }
@@ -86,4 +100,4 @@ export const query = graphql`
   }
 `
 
-export default BlogPage
+export default BlogPostsPage

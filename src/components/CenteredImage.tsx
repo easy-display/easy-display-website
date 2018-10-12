@@ -1,4 +1,4 @@
-import styled from 'react-emotion';
+import styled from 'react-emotion'
 
 const CenteredImage = styled.img`
   position: absolute;
@@ -7,6 +7,6 @@ const CenteredImage = styled.img`
   right: 0;
   margin-left: auto;
   margin-right: auto;
-`;
+`
 
-export default CenteredImage;
+export default CenteredImage
