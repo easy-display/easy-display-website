@@ -1,7 +1,7 @@
 ---
 slug: "easydisplay-and-aws-cloudwatch"
 date: "2018-10-05T06:15:59.165Z"
-title: "EasyDisplay to keep an eye on your AWS Cloudwatch dashboard guages."
+title: "Using EasyDisplay to keep an eye on your AWS Cloudwatch dashboard guages."
 excerpt: "Let us say you have a AWS Account and you have some resouces running there, 
           and let us say you wish to keep an eye on those resources using EasyDisplay on your iPad. 
           We shall do that using the following ..."

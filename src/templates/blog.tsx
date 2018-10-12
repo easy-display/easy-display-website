@@ -2,7 +2,6 @@ import * as React from 'react'
 import Helmet from 'react-helmet'
 
 import Link from 'gatsby-link'
-import WhiteContainer from '../components/WhiteContainer'
 
 import { graphql } from 'gatsby'
 import IndexLayout from '../layouts'
@@ -75,6 +74,19 @@ const BlogPost = styled.div`
 `
 const BlogBody = styled.div`
   max-width: ${getEmSize(widths.md)}em;
+  > div {
+    color: ${colors.gray.copy};
+    > h1 {
+      color: ${colors.gray.copy};
+      margin-top: 50px;
+      margin-bottom: 50px;
+    }
+    code {
+      color: ${colors.gray.calm};
+    }
+    .gatsby-highlight {
+      background-color: ${colors.ui.whisper};
+    }
 `
 
 const BlogTemplate: React.SFC<BlogTemplateProps> = ({ data, pathContext }) => {
@@ -82,7 +94,7 @@ const BlogTemplate: React.SFC<BlogTemplateProps> = ({ data, pathContext }) => {
   console.log(pathContext)
   const { markdownRemark: post } = data
   const { frontmatter, html } = post
-  const { title, date } = frontmatter
+  const { title, date, author } = frontmatter
   const { prev, next } = pathContext
   console.log('prev', prev)
   console.log('next', next)
@@ -95,12 +107,10 @@ const BlogTemplate: React.SFC<BlogTemplateProps> = ({ data, pathContext }) => {
             <Author>
               <AuthorImg src={frontmatter.author_image} />
               <AuthorName>
-                <em>{frontmatter.author}</em>
-                <p>on {frontmatter.date}</p>
+                <em>{author}</em>
+                <p>on {date}</p>
               </AuthorName>
             </Author>
-            <h1>{title}</h1>
-            <h3>{date}</h3>
             <div dangerouslySetInnerHTML={{ __html: html }} />
             {prev && <Link to={prev.frontmatter.slug}>Previous: {prev.frontmatter.title}</Link>}
             {next && <Link to={next.frontmatter.slug}>Next: {next.frontmatter.title}</Link>}
