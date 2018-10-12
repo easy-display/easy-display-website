@@ -1,4 +1,4 @@
-import Page from "../components/Page";
+import LayoutPage from "../components/LayoutPage.tsx";
 import Container from "../components/Container";
 
 import * as React from "react";
@@ -28,7 +28,7 @@ const PrivacyPolicyContainer = styled(Container)`
 `;
 
 export default () => (
-  <Page>
+  <LayoutPage>
     <PrivacyPolicyContainer>
 
       <h1>Privacy Policy</h1>
@@ -145,5 +145,5 @@ export default () => (
       </ul>
 
     </PrivacyPolicyContainer>
-  </Page>
+  </LayoutPage>
 );

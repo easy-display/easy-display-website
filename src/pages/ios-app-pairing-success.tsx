@@ -1,6 +1,6 @@
 import * as React from "react";
 
-import Page from "../components/Page";
+import LayoutPage from "../components/LayoutPage.tsx";
 import { withPrefix } from "gatsby-link";
 import styled from 'react-emotion';
 
@@ -22,13 +22,13 @@ const Title2 = styled.h2`
   padding-top: 15px;
 `;
 const page = () => (
-  <Page>
+  <LayoutPage>
     <SuccessContainer>
       <Title>Pairing Success!</Title>
       <Title2>Please enter the address in the Mac App</Title2>
       <CenteredImage src={withPrefix("/images/ready.png")} />
     </SuccessContainer>
-  </Page>
+  </LayoutPage>
 );
 
 export default page;

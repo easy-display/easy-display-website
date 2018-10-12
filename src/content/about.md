@@ -1,5 +1,5 @@
 ---
-title: "About Page"
+title: "About LayoutPage"
 slug: "about"
 layout: page
 ---

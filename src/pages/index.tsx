@@ -1,7 +1,7 @@
 import * as React from 'react';
 import { graphql, StaticQuery } from 'gatsby';
 
-import Page from '../components/Page';
+import LayoutPage from '../components/LayoutPage.tsx';
 import Container from '../components/Container';
 import IndexLayout from '../layouts';
 
@@ -138,7 +138,7 @@ const IndexPage: React.SFC<IndexPageProps> = () => (
     `}
     render={(props: IndexPageProps) => (
       <IndexLayout>
-        <Page>
+        <LayoutPage>
           <TopVioletContainer>
             <CenteredContainer>
               <WhiteHeader>EasyDisplay</WhiteHeader>
@@ -187,7 +187,7 @@ const IndexPage: React.SFC<IndexPageProps> = () => (
             <a href={`https://twitter.com/${props.site.siteMetadata.twitter}`}>made by: @{props.site.siteMetadata.twitter}</a>
           </BottomContainer>
           <Right>{require('../../package.json').version}</Right>
-        </Page>
+        </LayoutPage>
       </IndexLayout>
     )}
   />

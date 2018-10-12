@@ -1,13 +1,13 @@
 import * as React from 'react'
 import { Link } from 'gatsby'
 
-import Page from '../components/Page'
+import LayoutPage from '../components/LayoutPage.tsx'
 import Container from '../components/Container'
 import IndexLayout from '../layouts'
 
 const PageTwo = () => (
   <IndexLayout>
-    <Page>
+    <LayoutPage>
       <Container>
         <h1>Hi from the second page</h1>
         <p>Welcome to page 2</p>
@@ -20,7 +20,7 @@ const PageTwo = () => (
           </li>
         </ul>
       </Container>
-    </Page>
+    </LayoutPage>
   </IndexLayout>
 )
 

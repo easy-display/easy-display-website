@@ -1,6 +1,6 @@
 import * as React from 'react';
 
-import Page from '../components/Page';
+import LayoutPage from '../components/LayoutPage.tsx';
 import Container from '../components/Container';
 import styled from 'react-emotion';
 import { getEmSize } from '../styles/mixins';
@@ -46,7 +46,7 @@ const FaqContainer = styled.div`
 const Faqs: React.SFC<FaqsProps> = ({ data }) => {
   return (
     <IndexLayout>
-      <Page>
+      <LayoutPage>
         <Container>
           <h1>Frequently Answered Questions</h1>
           <GrayContainer>
@@ -60,7 +60,7 @@ const Faqs: React.SFC<FaqsProps> = ({ data }) => {
             })}
           </GrayContainer>
         </Container>
-      </Page>
+      </LayoutPage>
     </IndexLayout>
   );
 };

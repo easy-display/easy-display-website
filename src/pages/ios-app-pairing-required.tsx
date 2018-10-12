@@ -1,6 +1,6 @@
 import * as React from "react";
 
-import Page from "../components/Page";
+import LayoutPage from "../components/LayoutPage.tsx";
 import WhiteContainer from "../components/WhiteContainer";
 import styled from 'react-emotion';
 import { colors } from "../styles/variables";
@@ -28,11 +28,11 @@ const Title = styled.h1`
 `;
 
 export default () => (
-  <Page>
+  <LayoutPage>
     <QRContainer>
       <Title>Please open your MacOS application and scan this QR code using your iPad</Title>
       <CenteredImage1 src={withPrefix("/images/awaiting.png")} />
       <CenteredImage2 src={withPrefix("/images/qr.png")} />
     </QRContainer>
-  </Page>
+  </LayoutPage>
 );

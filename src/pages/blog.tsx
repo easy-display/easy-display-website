@@ -5,7 +5,7 @@ import Container from '../components/Container'
 import { colors } from '../styles/variables'
 
 import { graphql, Link } from 'gatsby'
-import Page from '../components/Page'
+import LayoutPage from '../components/LayoutPage.tsx'
 import IndexLayout from '../layouts'
 
 const BlogPostsContainer = styled(Container)`
@@ -39,7 +39,7 @@ const BlogPage: React.SFC<BlogProps> = ({ data }) => {
   console.log(posts)
   return (
     <IndexLayout>
-      <Page>
+      <LayoutPage>
         <BlogPostsContainer>
           {posts.map(({ node: post }) => {
             const { frontmatter } = post
@@ -61,7 +61,7 @@ const BlogPage: React.SFC<BlogProps> = ({ data }) => {
             )
           })}
         </BlogPostsContainer>
-      </Page>
+      </LayoutPage>
     </IndexLayout>
   )
 }

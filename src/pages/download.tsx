@@ -1,6 +1,6 @@
 import * as React from 'react';
 
-import Page from '../components/Page';
+import LayoutPage from '../components/LayoutPage.tsx';
 import Container from '../components/Container';
 import DownloadLink from '../components/DownloadLink';
 import WhiteContainer from '../components/WhiteContainer';
@@ -24,7 +24,7 @@ const VerticallyCentered = styled.div`
 
 export default () => (
   <IndexLayout>
-    <Page>
+    <LayoutPage>
       <Container>
         <WhiteContainer>
           <VerticallyCentered>
@@ -34,6 +34,6 @@ export default () => (
           </VerticallyCentered>
         </WhiteContainer>
       </Container>
-    </Page>
+    </LayoutPage>
   </IndexLayout>
 );
