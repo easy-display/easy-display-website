@@ -14,12 +14,26 @@ cover_image: "./foundation-emails-guide@1x.jpg"
 Let us take EasyDisplay for a quick spin,
 
 Download the latest [MacOS Client](/download), and install it.
-![easy-display-mac-app](download.png)
+![easy-display-download](download.png)
 
-Run it.
+Run the desktop app, you should get it running.
 
-![easy-display-mac-app](mac-app.png)
+![easy-display-mac-app-awaiting](mac-app-awaiting.png)
 
+You should also get a QR Code.
 
+![easy-display-mac-qr-code](qr.png)
+
+Open the iOS application,
+
+![ipad-springboard](ipad-springboard.png)
+
+And scan the QR Code using the App's camera
+
+![ipad-springboard](scan-qr-code.png)
+
+If you see this on your iPad, then you are all set
+
+![ipad-pairing-success](pairing-success.png)
 
 ---

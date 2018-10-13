@@ -87,7 +87,7 @@ const createBlogPostsPages = async ({ graphql, actions }) => {
 
   const allMarkdown = await graphql(`
     {
-      allMarkdownRemark(limit: 1000, filter: { frontmatter: { layout: { eq: "blog" } } }) {
+      allMarkdownRemark(sort: { order: ASC, fields: [frontmatter___date] }, filter: { frontmatter: { layout: { eq: "blog" } } }) {
         edges {
           node {
             html
@@ -118,9 +118,9 @@ const createBlogPostsPages = async ({ graphql, actions }) => {
   createTagPages(createPage, posts);
 
   posts.forEach(({ node },index) => {
-    console.log("node: ");
-    console.log(node);
-    console.log(node.id);
+    // console.log("node: ");
+    // console.log(node);
+    // console.log(node.id);
     const slug = node.frontmatter.slug;
 
     // console.log(`slug: ${slug}, blogPostTemplate: ${blogPostTemplate}`);

@@ -9,30 +9,20 @@ author: "Mohammed O. Tillawy"
 author_image: "https://secure.gravatar.com/avatar/f70cf5d832c72d8f308471ae656b57dc"
 ---
 
+# What is EasyDisplay?
 
 EasyDisplay is an open source project.
 
-The product goal to use an iOS device as a support display or dashboard on the side.
+The product goal to use an iOS device as a support display or dashboard on the side, 
+and to control iOS device using a MacOS client.
 
 You can find the source code of the server:
 
-[This gatsby website source code on github](https://github.com/easy-display/easy-display-website)
+* [This Gatsby website source code on Github](https://github.com/easy-display/easy-display-website)
+* [Native iOS application source code on Github](https://github.com/easy-display/easy-display-ios)
+* [Electron Desktop appliation source code on Github](https://github.com/easy-display/easy-display-desktop)
+* [Server source code on Github](https://github.com/easy-display/easy-display-server)
 
-[Native iOS application source code on github](https://github.com/easy-display/easy-display-ios)
-
-[Electron Desktop appliation source code on github](https://github.com/easy-display/easy-display-desktop)
-
-[Server source code](https://github.com/easy-display/easy-display-server)
-
-
- 
-
-Download the latest [MacOS Client](/download), and install it.
-![easy-display-mac-app](download.png)
-
-Run it.
-
-![easy-display-mac-app](mac-app.png)
 
 
 

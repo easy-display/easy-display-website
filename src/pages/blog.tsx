@@ -10,7 +10,6 @@ import LayoutBlog from '../components/LayoutBlog'
 import WhiteContainer from '../components/WhiteContainer'
 import { getEmSize } from '../styles/mixins'
 import Helmet from 'react-helmet'
-import LayoutRoot from '../components/LayoutRoot'
 
 const BlogPostsContainer = styled(Container)`
   max-width: ${getEmSize(widths.md)}em;

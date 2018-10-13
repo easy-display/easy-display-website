@@ -90,14 +90,14 @@ const BlogBody = styled.div`
 `
 
 const BlogTemplate: React.SFC<BlogTemplateProps> = ({ data, pathContext }) => {
-  console.log('pathContext:')
-  console.log(pathContext)
+  // console.log('pathContext:')
+  // console.log(pathContext)
   const { markdownRemark: post } = data
   const { frontmatter, html } = post
   const { title, date, author } = frontmatter
   const { prev, next } = pathContext
-  console.log('prev', prev)
-  console.log('next', next)
+  // console.log('prev', prev)
+  // console.log('next', next)
   return (
     <IndexLayout>
       <Helmet title={`${title} - My Blog`} />
@@ -112,8 +112,12 @@ const BlogTemplate: React.SFC<BlogTemplateProps> = ({ data, pathContext }) => {
               </AuthorName>
             </Author>
             <div dangerouslySetInnerHTML={{ __html: html }} />
+            <div>
             {prev && <Link to={prev.frontmatter.slug}>Previous: {prev.frontmatter.title}</Link>}
+            </div>
+            <div>
             {next && <Link to={next.frontmatter.slug}>Next: {next.frontmatter.title}</Link>}
+            </div>
           </BlogBody>
         </BlogPost>
       </LayoutBlogPost>
