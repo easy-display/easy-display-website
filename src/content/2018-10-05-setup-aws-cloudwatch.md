@@ -9,20 +9,25 @@ tags: [ "easy-display", "aws" , "cloudwatch" ]
 layout: blog
 author: "Mohammed O. Tillawy"
 author_image: "https://secure.gravatar.com/avatar/f70cf5d832c72d8f308471ae656b57dc"
+cover_image: "./foundation-emails-guide@1x.jpg"
 ---
 
+
+![asdf](aws-login.png)
+
+
 # Using EasyDisplay to monitor your AWS CloudWatch resources
+---
 
 Let us say you have a AWS Account and some resouces running there, 
 and let us say you wish to keep an eye on those resources using EasyDisplay on your iPad.
-We shall do that using the following steps
 
 We shall do that using the following steps:
 
 
-creating a new user for easydisplay: on AWS
-  create the necessary AWS policies
-  create a user for easydisplay to login with
+  * create the necessary AWS policies
+  * creating a new user for easydisplay: on AWS
+  * create a user for easydisplay to login with
 create a guage on AWS CloudWatch
   
 

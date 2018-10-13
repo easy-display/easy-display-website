@@ -23,6 +23,10 @@ const BlogPost = styled(WhiteContainer)`
   margin: 20px;
   padding: 20px;
   box-shadow: 5px 5px 5px 0px #ccc;
+  > h2 {
+    font-size: 26px;
+    margin-bottom: 20px;
+  }
 `
 
 const Author = styled.p`
@@ -32,6 +36,8 @@ const Author = styled.p`
   }
   padding-bottom: 5px;
   display: inline;
+  position: absolute;
+  bottom: 0;
 `
 
 const Tags = styled.ul`
@@ -93,8 +99,8 @@ const BlogPostsPage: React.SFC<BlogProps> = ({ data }) => {
                   <Link to={frontmatter.slug}>{frontmatter.title}</Link>
                 </h2>
                 <p>{frontmatter.excerpt}</p>
-                <Img src={frontmatter.author_image} />
                 <Author>
+                  <Img src={frontmatter.author_image} />
                   Written by <em>{frontmatter.author}</em> on {frontmatter.date}
                 </Author>
                 <Tags>

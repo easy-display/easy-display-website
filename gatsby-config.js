@@ -9,6 +9,7 @@ module.exports = {
     subtitle: 'EasyDisplay',
     description: 'EasyDisplay, the cloud browser, support desktop display made easy',
     siteUrl: 'https://www.easydisplay.info',
+    macosLatestVersiion: '0.1.2',
     downloadLink: 'https://downloads.easydisplay.info/downloads/EasyDisplay-0.1.2.dmg',
     itunesLink: 'https://itunes.apple.com/us/app/easydisplay/id1434962745?ls=1&mt=8',
     twitter: 'tillawy',
