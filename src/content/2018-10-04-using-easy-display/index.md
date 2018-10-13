@@ -36,4 +36,8 @@ If you see this on your iPad, then you are all set
 
 ![ipad-pairing-success](pairing-success.png)
 
+Now, start using EasyDisplay from your Mac app:
+
+![use](use.png)
+
 ---
