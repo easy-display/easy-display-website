@@ -9,6 +9,8 @@ import IndexLayout from '../layouts'
 import LayoutBlog from '../components/LayoutBlog'
 import WhiteContainer from '../components/WhiteContainer'
 import { getEmSize } from '../styles/mixins'
+import Helmet from 'react-helmet'
+import LayoutRoot from '../components/LayoutRoot'
 
 const BlogPostsContainer = styled(Container)`
   max-width: ${getEmSize(widths.md)}em;
@@ -42,14 +44,28 @@ const Author = styled.p`
 
 const Tags = styled.ul`
   list-style-type: none;
-  margin: 0;
-  padding: 0;
+  padding-bottom: 5px;
+  display: inline;
+  position: absolute;
+  right: 0;
+  bottom: 40px;
 `
 const Tag = styled.li`
   display: inline-block;
   padding-right: 10px;
+  font-size: 12px;
   font-weight: bold;
   font-style: oblique;
+  color: ${colors.lilac};
+  &:after {
+    content: ', ';
+  }
+  &:last-child:after {
+    content: '';
+  }
+  > a {
+    color: ${colors.lilac};
+  }
 `
 
 const Img = styled.img`
@@ -86,9 +102,10 @@ interface BlogProps {
 
 const BlogPostsPage: React.SFC<BlogProps> = ({ data }) => {
   const { edges: posts } = data.allMarkdownRemark
-  console.log(posts)
+  // console.log(posts)
   return (
     <IndexLayout>
+      <Helmet title="Blog" />
       <LayoutBlog>
         <BlogPostsContainer>
           {posts.map(({ node: post }) => {
