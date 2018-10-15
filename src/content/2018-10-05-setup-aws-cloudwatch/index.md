@@ -164,7 +164,7 @@ https://344790573488.signin.aws.amazon.com/console
 
 for example my final url is:
 ```
-https://344790573488.signin.aws.amazon.com/console/cloudwatch?region=eu-west-1#dashboards:name=EasyDisplay
+https://344790573488.signin.aws.amazon.com/console/cloudwatch?region=eu-central-1#dashboards:name=EasyDisplay
 ```
 
 ![asdf](easy-display-enter-url.png)
@@ -180,56 +180,70 @@ var userName = "easydisplay";
 var userPassword = "password";
 /* YOU NEED TO CHANGE THE FOLLOWING - END*/
 
+var login = function(username, password){
+  var element = document.getElementById('username');
+  
+  element.value = userName;
+  var ev = new Event('input', { bubbles: true});
+  ev.simulated = true;
+  element.value = userName;
+  element.defaultValue = userName;
+  element.dispatchEvent(ev);
+  
+  var element2 = document.getElementById('password');
+  var ev2 = new Event('input', { bubbles: true});
+  ev2.simulated = true;
+  element2.value = userPassword;
+  element2.defaultValue = userPassword;
+  element2.dispatchEvent(ev2);
+  
+  document.getElementById('signin_button').click();
+}
 
+login( userName, userPassword );
 
-var element = document.getElementById('username');
+var hideSideBar = function(){
+  var hideSidebarButton = document.getElementById("gwt-debug-toggleButton");
+  var ev3 = new Event('mousedown', { bubbles: true});
+  hideSidebarButton.dispatchEvent(ev3);
+}
 
-element.value = userName;
-var ev = new Event('input', { bubbles: true});
-ev.simulated = true;
-element.value = userName;
-element.defaultValue = userName;
-element.dispatchEvent(ev);
-
-var element2 = document.getElementById('password');
-var ev2 = new Event('input', { bubbles: true});
-ev2.simulated = true;
-element2.value = userPassword;
-element2.defaultValue = userPassword;
-element2.dispatchEvent(ev2);
-
-document.getElementById('signin_button').click();
-
-
-
-var hideSidebarButton = document.getElementById("gwt-debug-toggleButton");
-var ev3 = new Event('mousedown', { bubbles: true});
-hideSidebarButton.dispatchEvent(ev3);
+// hideSideBar();
 
 
 //   refresh
+var refresh = function(){
  document.getElementsByClassName("refresh")[0].dispatchEvent(
    new Event("click", {bubbles: true})
  ); 
+}
+
+var toggleRefreshControls = function(){
+  var ev4 = new Event('click', { bubbles: true});
+  document.getElementsByClassName("cwdb-refresh-controls"
+  )[0].getElementsByClassName("cwui-dropdown-toggle"
+  )[0].dispatchEvent( ev4 );
+}
+// toggleRefreshControls();
 
 
-// open menu
-var ev4 = new Event('click', { bubbles: true});
-document.getElementsByClassName("cwdb-refresh-controls")[0].getElementsByClassName("cwui-dropdown-toggle")[0].dispatchEvent( ev4 );
-
-
-
-document.getElementsByClassName("cwui-dropdown-menu")[0].children[0].children[0].children[0].checked = true
-var ev5 = new Event('click', { bubbles: true,cancelable: false});
-ev5.simulated = true;
-document.getElementsByClassName("cwui-dropdown-menu")[0].children[0].children[0].children[0].dispatchEvent(ev5);
-
-//dismiss menu
-var ev6 = new Event('click', { bubbles: true});
-document.getElementsByClassName("cwdb-refresh-controls")[0].getElementsByClassName("cwui-dropdown-toggle")[0].dispatchEvent( ev6 );
-
+var turnOnAutoRefresh = function(){
+  document.getElementsByClassName("cwui-dropdown-menu"
+  )[0].children[0].children[0].children[0].checked = true
+  var ev5 = new Event('click', { bubbles: true,cancelable: false});
+  ev5.simulated = true;
+  document.getElementsByClassName("cwui-dropdown-menu"
+  )[0].children[0].children[0].children[0].dispatchEvent(ev5);
+}
+// turnOnAutoRefresh();
 
 ```
 
+---
+
+###### Now you should get the following on your iPad.
 
 
+![asdf](preview.png)
+
+---

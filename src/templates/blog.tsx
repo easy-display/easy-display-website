@@ -92,9 +92,15 @@ const BlogBody = styled.div`
       margin-bottom: 50px;
       font-size: 1.5rem;
       > em {
-        color: ${colors.gray.copy}
+        color: ${colors.gray.copy};
       }
     }
+    img {
+      border-style: solid;
+      border-width: 10px;
+      border-color: #f1f2f6;
+    }
+  }
 `
 
 const BlogTemplate: React.SFC<BlogTemplateProps> = ({ data, pathContext }) => {
