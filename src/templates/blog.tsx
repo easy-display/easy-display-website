@@ -87,6 +87,14 @@ const BlogBody = styled.div`
     .gatsby-highlight {
       background-color: ${colors.ui.whisper};
     }
+    > h6 {
+      color: ${colors.gray.calm};
+      margin-bottom: 50px;
+      font-size: 1.5rem;
+      > em {
+        color: ${colors.gray.copy}
+      }
+    }
 `
 
 const BlogTemplate: React.SFC<BlogTemplateProps> = ({ data, pathContext }) => {
@@ -112,12 +120,8 @@ const BlogTemplate: React.SFC<BlogTemplateProps> = ({ data, pathContext }) => {
               </AuthorName>
             </Author>
             <div dangerouslySetInnerHTML={{ __html: html }} />
-            <div>
-            {prev && <Link to={prev.frontmatter.slug}>Previous: {prev.frontmatter.title}</Link>}
-            </div>
-            <div>
-            {next && <Link to={next.frontmatter.slug}>Next: {next.frontmatter.title}</Link>}
-            </div>
+            <div>{prev && <Link to={prev.frontmatter.slug}>Previous: {prev.frontmatter.title}</Link>}</div>
+            <div>{next && <Link to={next.frontmatter.slug}>Next: {next.frontmatter.title}</Link>}</div>
           </BlogBody>
         </BlogPost>
       </LayoutBlogPost>
