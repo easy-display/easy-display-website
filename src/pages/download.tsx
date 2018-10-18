@@ -53,7 +53,7 @@ const DownloadPage: React.SFC<DownloadPageProps> = () => (
               <VerticallyCentered>
                 <HorizontallyCentered>
                   <DownloadLink href={props.site.siteMetadata.downloadLink}>
-                    Download the latest MacOS App, v: {props.site.siteMetadata.macosLatestVersiion}
+                    Download the latest MacOS App, version: {props.site.siteMetadata.macosLatestVersiion}
                   </DownloadLink>
                 </HorizontallyCentered>
               </VerticallyCentered>

@@ -1,4 +1,4 @@
-import LayoutPage from "../components/LayoutPage.tsx";
+import LayoutPage from "../components/LayoutPage";
 import Container from "../components/Container";
 
 import * as React from "react";

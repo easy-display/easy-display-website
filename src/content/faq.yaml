@@ -18,7 +18,6 @@
 - question: Does EasyDisplay collect any information about my browsing patterns?
   answer: No.
 - question: How do I make sure that EasyDisplay is not collecting any information about my browsing patterns?
-  answer: you can check the source-code of the server:<a href='https://github.com/tillawy/'>https://github.com/tillawy/</a>
+  answer: Please check the <a href="https://github.com/easy-display/easy-display-server">source-code of the server</a>
 - question: How come EasyDisplay is open-source and you charge for it?
   answer: We charge to support the servers hosting.
-
