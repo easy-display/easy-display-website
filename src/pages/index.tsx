@@ -97,6 +97,13 @@ const WhiteHeader = styled.p`
 const TopVioletContainer = styled(VioletContainer)`
   height: 300px;
 `
+const VideoContainer = styled.div`
+  align: center;
+  text-align: center;
+  height: 450px;
+`
+
+const Video = styled.div``
 
 /*
 const NavyHeader = styled.p`
@@ -106,6 +113,7 @@ const NavyHeader = styled.p`
 `;*/
 
 const WhiteParagraph = styled.p`
+  font-size: x-large;
   color: ${colors.white};
   text-align: center;
 `
@@ -142,9 +150,24 @@ const IndexPage: React.SFC<IndexPageProps> = () => (
           <TopVioletContainer>
             <CenteredContainer>
               <WhiteHeader>EasyDisplay</WhiteHeader>
-              <WhiteParagraph>Get An Easy Secondary Support Display Without Husstle</WhiteParagraph>
+              <WhiteParagraph>Don't throw away your good old iPad</WhiteParagraph>
+              <WhiteParagraph>Use it Easy Secondary Support Display Without Husstle</WhiteParagraph>
             </CenteredContainer>
           </TopVioletContainer>
+
+          <VideoContainer>
+            <Video>
+              <iframe
+                width="560"
+                height="315"
+                src="https://www.youtube.com/embed/v-krMNrh1ds"
+                frameBorder="0"
+                allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                allowFullScreen
+              />
+            </Video>
+          </VideoContainer>
+
           <WhiteContainer>
             <Logo src={withPrefix('/images/icon.svg')} />
             <FeaturesContainer>

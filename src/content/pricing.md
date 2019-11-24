@@ -4,4 +4,4 @@ slug: "pricing"
 layout: page
 ---
 
-##### EasyDisplay is a paid app on the store.
+##### EasyDisplay is a free app on the store.

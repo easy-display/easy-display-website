@@ -4,6 +4,15 @@ import { graphql } from 'gatsby'
 import LayoutPage from '../components/LayoutPage'
 import Container from '../components/Container'
 import IndexLayout from '../layouts'
+import WhiteContainer from '../components/WhiteContainer'
+import styled from 'react-emotion'
+
+const WhiteContentContainer = styled(WhiteContainer)`
+  margin: 10px;
+  height: 300px;
+  padding-top: 20px;
+  padding-left: 20px;
+`
 
 interface PageTemplateProps {
   data: {
@@ -31,8 +40,10 @@ const PageTemplate: React.SFC<PageTemplateProps> = ({ data }) => (
   <IndexLayout>
     <LayoutPage>
       <Container>
-        <h1>{data.markdownRemark.frontmatter.title}</h1>
-        <div dangerouslySetInnerHTML={{ __html: data.markdownRemark.html }} />
+        <WhiteContentContainer>
+          <h1>{data.markdownRemark.frontmatter.title}</h1>
+          <div dangerouslySetInnerHTML={{ __html: data.markdownRemark.html }} />
+        </WhiteContentContainer>
       </Container>
     </LayoutPage>
   </IndexLayout>
