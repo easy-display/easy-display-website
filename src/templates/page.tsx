@@ -9,7 +9,7 @@ import styled from 'react-emotion'
 
 const WhiteContentContainer = styled(WhiteContainer)`
   margin: 10px;
-  height: 300px;
+  height: 500px;
   padding-top: 20px;
   padding-left: 20px;
 `

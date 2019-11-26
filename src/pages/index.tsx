@@ -151,7 +151,7 @@ const IndexPage: React.SFC<IndexPageProps> = () => (
             <CenteredContainer>
               <WhiteHeader>EasyDisplay</WhiteHeader>
               <WhiteParagraph>Don't throw away your good old iPad</WhiteParagraph>
-              <WhiteParagraph>Use it Easy Secondary Support Display Without Husstle</WhiteParagraph>
+              <WhiteParagraph>Use it as Secondary Support Display Without Husstle</WhiteParagraph>
             </CenteredContainer>
           </TopVioletContainer>
 
@@ -160,10 +160,10 @@ const IndexPage: React.SFC<IndexPageProps> = () => (
               <iframe
                 width="560"
                 height="315"
-                src="https://www.youtube.com/embed/v-krMNrh1ds"
-                frameBorder="0"
+                src="https://www.youtube.com/embed/Xu6pr0L4ecE"
+                frameborder="0"
                 allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
-                allowFullScreen
+                allowfullscreen
               />
             </Video>
           </VideoContainer>
