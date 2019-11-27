@@ -160,10 +160,10 @@ const IndexPage: React.SFC<IndexPageProps> = () => (
               <iframe
                 width="560"
                 height="315"
-                src="https://www.youtube.com/embed/Xu6pr0L4ecE"
-                frameborder="0"
+                src="https://www.youtube.com/embed/kLzyO1VpVDc"
+                frameBorder="0"
                 allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
-                allowfullscreen
+                allowFullScreen
               />
             </Video>
           </VideoContainer>
